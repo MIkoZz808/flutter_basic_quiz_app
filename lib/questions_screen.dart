@@ -6,6 +6,7 @@ import 'package:flutter_basic_quiz_app/models/quiz_questions.dart';
 class QuestionsScreen extends StatefulWidget {
   const QuestionsScreen({Key? key}) : super(key: key);
 
+  @override
   State<QuestionsScreen> createState() => _QuestionsScreenState();
 }
 
@@ -34,6 +35,7 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
                 style: const TextStyle(
                   fontSize: 30,
                   fontWeight: FontWeight.bold,
+                  color: Colors.white
                 )),
             const SizedBox(height: 30),
             ...currentQuestion.getShuffledAnswers().map((answer) {

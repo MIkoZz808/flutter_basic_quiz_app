@@ -5,6 +5,7 @@ import 'package:flutter_basic_quiz_app/questions_screen.dart';
 class Quiz extends StatefulWidget {
   const Quiz({Key? key}) : super(key: key);
 
+  @override
   State<Quiz> createState() => _QuizState();
 }
 
